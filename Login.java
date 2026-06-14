@@ -3,14 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.quick_chat;
-
 import java.util.regex.Pattern;
-
 /**
  *
- * @author Student
+ * @author lerat
  */
-class Login {
+public class Login {
+
+    
+
+
  String storedUsername;//stores the registered username
  String storedPassword;//stores the registered password
  String cellPhoneNumber;//stores user cell phone number
@@ -93,3 +95,4 @@ public String returnLoginStatus( boolean loginSuccess) {
 }
 
 }
+
