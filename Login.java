@@ -34,10 +34,15 @@ class Login {
      //(?=.*[A-Z])-> at least one uppercase letter
      //.{8,}     ->at leaST 8 CHARACTHERS long
      //$ sserts the end of the string
-     String regex = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[^A-Z0-9])(?=.*[a-z]).{8,}$";
-     return Pattern.matches(regex, password);
-  
- }
+    String regex =
+            "^(?=.*[A-Z])" +
+            "(?=.*[a-z])" +
+            "(?=.*\\d)" +
+            "(?=.*[^A-Za-z0-9])" +
+            ".{8,}$";
+
+    return Pattern.matches(regex, password);
+}
  //Method to check South African cell phone number
  public boolean checkCellPhoneNumber(String number) {
      //Regex pattern explaination
